@@ -776,7 +776,7 @@ a:focus {
 
 .client_section .box .img-box {
   width: 125px;
-  border-radius: 100%;
+  border-radius: 10%;
   margin-bottom: -62px;
   position: relative;
   z-index: 2;
