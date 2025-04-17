@@ -694,8 +694,8 @@ a:focus {
   position: absolute;
   left: 0;
   top: 0;
-  width: 75px;
-  height: 75px;
+  width: 0px;
+  height: 0px;
   border-radius: 10%;
   text-align: center;
   background-color: #63f74f;
@@ -711,10 +711,6 @@ a:focus {
           align-items: center;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.blog_section .box .detail-box .img_date h6 {
-  margin: 0;
 }
 
 .blog_section .box .detail-box h3 {
