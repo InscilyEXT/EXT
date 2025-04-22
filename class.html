@@ -102,6 +102,27 @@
       font-size: 1rem;
       color: #555;
     }
+
+    .footer_section {
+      text-align: center;
+      padding: 40px 0 20px 0;
+      background-color: #f5f5f5;
+    }
+
+    .social_box {
+      margin-bottom: 10px;
+    }
+
+    .social_box a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .footer_section p {
+      margin: 0;
+      font-size: 14px;
+      color: #888;
+    }
   </style>
 </head>
 
@@ -158,17 +179,7 @@
           <div class="col-md-10 ml-auto">
             <div class="row info_main-row">
               <div class="col-md-6 pr-0">
-                <!-- footer section -->
-                <section class="footer_section">
-                  <div class="social_box">
-                    <a href="#"><img src="facebook.png" alt=""></a>
-                    <a href="#"><img src="twitter.png" alt=""></a>
-                    <a href="#"><img src="linkedin.png" alt=""></a>
-                    <a href="#"><img src="instagram.png" alt=""></a>
-                    <a href="#"><img src="youtube.png" alt=""></a>
-                  </div>
-                  <p>&copy; 2025 All Rights Reserved. External Esports</p>
-                </section>
+                <!-- formerly footer, now removed from here -->
               </div>
             </div>
           </div>
@@ -195,6 +206,19 @@
     <!-- Spacer to extend page length -->
     <div style="height: 1000px;"></div>
 
+    <!-- Footer moved to the very bottom -->
+    <section class="footer_section">
+      <div class="social_box">
+        <a href="#"><img src="facebook.png" alt=""></a>
+        <a href="#"><img src="twitter.png" alt=""></a>
+        <a href="#"><img src="linkedin.png" alt=""></a>
+        <a href="#"><img src="instagram.png" alt=""></a>
+        <a href="#"><img src="youtube.png" alt=""></a>
+      </div>
+      <p>&copy; 2025 All Rights Reserved. External Esports</p>
+    </section>
+
+    <!-- Scripts -->
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="bootstrap.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
