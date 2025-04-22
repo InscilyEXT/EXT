@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+	
 <head>
   <link rel="icon" type="image/png" href="External.png" />
+  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -19,239 +23,208 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
-
   <!-- Custom styles for this template -->
   <link href="style1.css" rel="stylesheet" />
+  <!-- responsive style -->
   <link href="responsive.css" rel="stylesheet" />
 
-  <style>
-    .news_section {
-      padding: 60px 20px;
-      background-color: #f5f5f5;
-      text-align: center;
-    }
+<style>
 
-    .news_heading {
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-      color: #333;
-      font-weight: 700;
-    }
+  .about-section {
+    background-color: #5D01F3;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
 
-    .news_cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
+  .about-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
-    .news_card {
-      background-color: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      max-width: 300px;
-      text-align: left;
-    }
+  .about-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
 
-    .news_card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #5D01F3;
-    }
+  .about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
 
-    .news_card p {
-      font-size: 1rem;
-      color: #555;
-    }
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
 
-    .about-section {
-      background-color: #5D01F3;
-      color: #fff;
-      padding: 80px 20px;
-      text-align: center;
-    }
+  .stat-box {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 16px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
 
-    .about-section .container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
+  .stat-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00ffcc;
+  }
 
-    .about-section h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-
-    .about-section p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-
-    .stats {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    .stat-box {
-      background-color: #1c1c1c;
-      padding: 30px;
-      border-radius: 16px;
-      width: 200px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .stat-box h2 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #00ffcc;
-    }
-
-    .stat-box p {
-      font-size: 1rem;
-      color: #ccc;
-    }
-  </style>
+  .stat-box p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+</style>
+	
 </head>
 
 <body>
   <div class="hero_area">
-    <!-- header section starts -->
+    <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <div class="header_nav">
           <a class="navbar-brand brand_desktop" href="index.html">
             <img src="logo.png" alt="" />
           </a>
-          <div class="bottom_nav">
-            <nav class="navbar navbar-expand-lg custom_nav-container">
-              <a class="navbar-brand brand_mobile" href="index.html">
-                <img src="logo.png" alt="" />
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html"> About </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="class.html"> News </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Sponsorship</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline">
-                    <button class="btn ml-3 ml-lg-5 nav_search-btn" type="submit"></button>
-                  </form>
+          </a>
+                </li>
+              </ul>
+            </div>
+            <div class="bottom_nav">
+              <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand brand_mobile" href="index.html">
+                  <img src="logo.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                    <ul class="navbar-nav  ">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html"> About </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="class.html"> News </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Sponsorship</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline">
+                      <button class="btn ml-3 ml-lg-5 nav_search-btn" type="submit"></button>
+                    </form>
+                  </div>
                 </div>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <!-- end header section -->
 
-    <!-- news section -->
-    <section class="news_section">
-      <div class="container">
-        <h2 class="news_heading">Latest News</h2>
-        <div class="news_cards">
-          <div class="news_card">
-            <h3>External Wins Regional Championship</h3>
-            <p>Our Valorant team brought home the trophy at the 2025 West Coast Esports Cup. Huge shoutout to the players and fans!</p>
-          </div>
-          <div class="news_card">
-            <h3>New Roster Announcement</h3>
-            <p>We're excited to welcome two new players to our League of Legends roster. Stay tuned for an interview coming soon.</p>
-          </div>
-          <div class="news_card">
-            <h3>External Launches New Merch Line</h3>
-            <p>Check out our exclusive new line of esports apparel — now live in our store. Get your favorite team gear today!</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- info section -->
+  <div class="info_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 ml-auto">
+          <div class="row info_main-row">
+            <div class="col-md-6 pr-0">
 
-    <!-- info section -->
-    <div class="info_section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-10 ml-auto">
-            <div class="row info_main-row">
-              <div class="col-md-6 pr-0">
-                <!-- footer section -->
-                <section class="footer_section">
-                  <div class="social_box">
-                    <a href="#"><img src="facebook.png" alt=""></a>
-                    <a href="#"><img src="twitter.png" alt=""></a>
-                    <a href="#"><img src="linkedin.png" alt=""></a>
-                    <a href="#"><img src="instagram.png" alt=""></a>
-                    <a href="#"><img src="youtube.png" alt=""></a>
-                  </div>
-                  <p>&copy; 2025 All Rights Reserved. External Esports</p>
-                </section>
-                <!-- end footer section -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              <!-- footer section -->
+              <section class=" footer_section ">
+                <div class="social_box">
+                  <a href="#">
+                    <img src="facebook.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="twitter.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="linkedin.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="instagram.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="youtube.png" alt="">
+                  </a>
+                </div>
+                <p>
+                  &copy; 2025 All Rights Reserved. External Esports
+                </p>
+              </section>
+          
+  <!-- end info section -->
 
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="bootstrap.js"></script>
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
 
-    <script>
-      function openNav() {
-        document.getElementById("myNav").classList.toggle("menu_width");
-        document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+    }
+  </script>
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
       }
-    </script>
+    });
 
-    <!-- owl carousel script -->
-    <script type="text/javascript">
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        navText: [],
-        autoplay: true,
-        autoplayHoverPause: true,
-        responsive: {
-          0: { items: 1 },
-          600: { items: 2 },
-          1000: { items: 2 }
-        }
-      });
 
-      $(".owl_carousel1").owlCarousel({
-        loop: true,
-        margin: 25,
-        nav: true,
-        navText: [],
-        autoplay: true,
-        autoplayHoverPause: true,
-        responsive: {
-          0: { items: 1 },
-          600: { items: 2 },
-          1000: { items: 2 }
+    $(".owl_carousel1").owlCarousel({
+      loop: true,
+      margin: 25,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 2
         }
-      });
-    </script>
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
 </body>
+
 </html>
