@@ -57,8 +57,7 @@
 
     .news-tab {
       margin-top: 500px;
-      padding: 100px 20px;
-      background-color: #eee;
+      padding: 80px 20px;
       text-align: center;
     }
 
@@ -79,22 +78,26 @@
       background-color: #4501b3;
     }
 
-    .extra-news {
+    .single-news-page {
       display: none;
-      margin-top: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 60px 30px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+      text-align: left;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     }
 
-    .extra-news .news_card {
-      background-color: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      max-width: 300px;
-      text-align: left;
+    .single-news-page h2 {
+      color: #5D01F3;
+      margin-bottom: 20px;
+    }
+
+    .single-news-page p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
     }
 
     .footer_section {
@@ -181,24 +184,18 @@
       </div>
     </div>
 
-    <!-- Big Empty News Tab with Show More -->
+    <!-- Big Transparent News Tab -->
     <div class="news-tab">
       <h2>More News</h2>
-      <button class="show-more-button" onclick="document.getElementById('extraNews').style.display='flex'">Show More</button>
+      <button class="show-more-button" onclick="document.getElementById('singleNews').style.display='block'">Show More</button>
 
-      <div class="extra-news" id="extraNews">
-        <div class="news_card">
-          <h3>Upcoming Tournament</h3>
-          <p>We’re preparing for the Spring Split qualifiers. The full schedule will be released next week.</p>
-        </div>
-        <div class="news_card">
-          <h3>Streaming Partnership</h3>
-          <p>Excited to announce our partnership with StreamZone to bring you live match coverage.</p>
-        </div>
-        <div class="news_card">
-          <h3>Behind the Scenes</h3>
-          <p>Follow our journey through training, strategy, and daily life as esports athletes.</p>
-        </div>
+      <div class="single-news-page" id="singleNews">
+        <h2>Inside the External Esports Bootcamp</h2>
+        <p>
+          Dive into the daily grind of the External Esports team as they prepare for their most important matches yet. 
+          With a mix of coaching, strategy sessions, and reflex training, the bootcamp has shaped our team's discipline and synergy. 
+          Stay tuned for exclusive behind-the-scenes videos and interviews coming next week.
+        </p>
       </div>
     </div>
 
