@@ -17,7 +17,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #0d0c1d, #1d1f33);
+      background-color: #0027ff;
       color: white;
     }
 
@@ -25,58 +25,44 @@
       padding-bottom: 50px;
     }
 
+    /* Fixed Result Bars */
+    .match-entry {
+      position: fixed;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 20px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.6);
+      border-bottom: 1px solid #ffffff33;
+      text-align: center;
+      z-index: 999;
+    }
+
+    .match-entry:nth-child(2) {
+      top: 0;
+    }
+
+    .match-entry:nth-child(3) {
+      top: 60px;
+    }
+
+    .match-entry:nth-child(4) {
+      top: 120px;
+    }
+
     .clan-war-results {
-      padding: 100px 20px 60px;
+      padding-top: 200px;
       text-align: center;
     }
 
     .clan-war-results h2 {
       font-size: 3rem;
-      color: #5D01F3;
-      margin-bottom: 60px;
+      color: #ffffff;
+      margin-bottom: 40px;
       font-weight: 700;
-    }
-
-    .match-entry {
-      width: 100%;
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 30px;
-      background: linear-gradient(90deg, rgba(93,1,243,0.2), rgba(255,255,255,0.05));
-      border-left: 6px solid #5D01F3;
-      border-radius: 12px;
-      transition: transform 0.3s ease;
-    }
-
-    .match-entry:hover {
-      transform: translateY(-5px);
-    }
-
-    .match-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .match-desc {
-      font-size: 1rem;
-      color: #ccc;
-    }
-
-    .more-button {
-      margin-top: 50px;
-      padding: 15px 40px;
-      font-size: 1rem;
-      background-color: #5D01F3;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .more-button:hover {
-      background-color: #4501b3;
     }
 
     .footer_section {
@@ -130,34 +116,15 @@
       </div>
     </header>
 
-    <!-- Clan War Results -->
+    <!-- Fixed Result Bars -->
+    <div class="match-entry">EXT vs NightRaid</div>
+    <div class="match-entry">EXT vs ShadowUnit</div>
+    <div class="match-entry">EXT vs NovaLegion</div>
+
+    <!-- Clan War Results Page Content -->
     <section class="clan-war-results">
       <h2>Clan War Results</h2>
-
-      <div class="match-entry">
-        <div class="match-title">EXT vs NightRaid</div>
-        <div class="match-desc">Final Score: 3-2 — MVP: Slayz with 12 kills in Game 5! A nail-biting finish.</div>
-      </div>
-
-      <div class="match-entry">
-        <div class="match-title">EXT vs ShadowUnit</div>
-        <div class="match-desc">Clean 3-0 sweep with dominant rotations and coordination. Semi-final locked!</div>
-      </div>
-
-      <div class="match-entry">
-        <div class="match-title">Upcoming: EXT vs NovaLegion</div>
-        <div class="match-desc">Grand finals this Saturday @ 8 PM GMT. Let’s bring the trophy home!</div>
-      </div>
-
-      <button class="more-button" onclick="document.getElementById('extraRecap').style.display='block'">Match Recap</button>
-
-      <div id="extraRecap" class="match-entry" style="display:none;">
-        <div class="match-title">EXT vs ShadowUnit – Full Recap</div>
-        <div class="match-desc">
-          EXT started strong with early flanks and maintained pressure throughout the match. ShadowUnit was unable to recover after Game 1,
-          with EXT's sniper plays proving too deadly to counter. Expect highlights on our YouTube soon!
-        </div>
-      </div>
+      <!-- Additional match history or content can go here -->
     </section>
 
     <!-- Footer -->
