@@ -901,50 +901,6 @@ a:focus {
   border-radius: 25px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #0027ff;
-  color: white;
-}
-
-.clan-war-results {
-  padding-top: 200px; /* Push content below fixed bars */
-  text-align: center;
-}
-
-.clan-war-results h2 {
-  font-size: 3rem;
-  color: #ffffff;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.match-entry {
-  position: fixed;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 20px;
-  font-size: 1.6rem;
-  font-weight: bold;
-  background: rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid #ffffff33;
-  text-align: center;
-  z-index: 999;
-}
-
-.match-entry:nth-child(2) {
-  top: 0;
-}
-.match-entry:nth-child(3) {
-  top: 60px;
-}
-.match-entry:nth-child(4) {
-  top: 120px;
-}
 
 
 .info_section .contact_section button {
