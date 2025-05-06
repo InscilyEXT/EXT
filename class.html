@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
   <link rel="icon" type="image/png" href="External.png" />
@@ -120,6 +120,19 @@
       font-size: 14px;
       color: #888;
     }
+
+    /* Style for the title "Recent Clan Wars" */
+    .recent-clan-wars-title {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 3rem;
+      color: #5D01F3;
+      font-weight: 700;
+      z-index: 1000;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -155,22 +168,25 @@
       </div>
     </header>
 
-  <!-- Floating Clan War Results -->
-  <div class="floating-news">
-    <div class="news_card">
-      <h3>EXT vs Blaze • W 3-1</h3>
-      <p>Dominated early with coordinated pushes. MVP: Frosty with 12 eliminations in Game 2.</p>
+    <!-- Recent Clan Wars Title -->
+    <h1 class="recent-clan-wars-title">Recent Clan Wars</h1>
+
+    <!-- Floating Clan War Results -->
+    <div class="floating-news">
+      <div class="news_card">
+        <h3>EXT vs Blaze • W 3-1</h3>
+        <p>Dominated early with coordinated pushes. MVP: Frosty with 12 eliminations in Game 2.</p>
+      </div>
+      <div class="news_card">
+        <h3>EXT vs NightRaid • L 2-3</h3>
+        <p>A nail-biting series. Came down to the final round. GG to NightRaid!</p>
+      </div>
+      <div class="news_card">
+        <h3>EXT vs NovaCore • W 3-0</h3>
+        <p>Flawless execution and control. Zero rounds dropped. Solid teamwork across the board.</p>
+      </div>
     </div>
-    <div class="news_card">
-      <h3>EXT vs NightRaid • L 2-3</h3>
-      <p>A nail-biting series. Came down to the final round. GG to NightRaid!</p>
-    </div>
-    <div class="news_card">
-      <h3>EXT vs NovaCore • W 3-0</h3>
-      <p>Flawless execution and control. Zero rounds dropped. Solid teamwork across the board.</p>
-    </div>
-  </div>
-    
+
     <!-- Detailed Clan War History -->
     <div class="news-tab">
       <h2>Past Clan Wars</h2>
