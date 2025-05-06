@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>External Esports</title>
+  <title>External Esports - Clan Wars</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" type="text/css" href="bootstrap.css" />
@@ -35,7 +35,7 @@
     }
 
     .floating-news .news_card {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.95);
       padding: 25px;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -80,7 +80,7 @@
 
     .single-news-page {
       display: none;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.95);
       border-radius: 20px;
       padding: 60px 30px;
       max-width: 1000px;
@@ -125,18 +125,17 @@
 
 <body>
   <div class="hero_area">
-    <!-- header section starts -->
     <header class="header_section">
       <div class="container">
         <div class="header_nav">
           <a class="navbar-brand brand_desktop" href="index.html">
-            <img src="logo.png" alt="" />
+            <img src="logo.png" alt="External Esports Logo" />
           </a>
         </div>
         <div class="bottom_nav">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand brand_mobile" href="index.html">
-              <img src="logo.png" alt="" />
+              <img src="logo.png" alt="External Esports Logo" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
               <span class="navbar-toggler-icon"></span>
@@ -144,62 +143,56 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="class.html"> News </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Sponsorship</a>
-                  </li>
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
+                  <li class="nav-item active"><a class="nav-link" href="wars.html">Clan Wars</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Sponsorship</a></li>
                 </ul>
-                <form class="form-inline">
-                  <button class="btn ml-3 ml-lg-5 nav_search-btn" type="submit"></button>
-                </form>
               </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
-    <!-- end header section -->
 
-    <!-- Floating News Cards -->
+    <!-- Floating Clan War Results -->
     <div class="floating-news">
       <div class="news_card">
-        <h3>External Community Server Nuked!</h3>
-        <p>Recently our community discord server was nuked by a hacked mod, everything was destroyed but fortunately restored!</p>
+        <h3>EXT vs Blaze • W 3-1</h3>
+        <p>Dominated early with coordinated pushes. MVP: Frosty with 12 eliminations in Game 2.</p>
       </div>
       <div class="news_card">
-        <h3>New Roster Announcement</h3>
-        <p>We're excited to welcome all the new players to EXT esports, the roster and spots are soon filled.</p>
+        <h3>EXT vs NightRaid • L 2-3</h3>
+        <p>A nail-biting series. Came down to the final round. GG to NightRaid!</p>
       </div>
       <div class="news_card">
-        <h3>EXT Scrims</h3>
-        <p>We in External esports are proud to announce that we have our own scrims server, theres gonna be a duo turney with money prizes at 400 members in the community server!</p>
+        <h3>EXT vs NovaCore • W 3-0</h3>
+        <p>Flawless execution and control. Zero rounds dropped. Solid teamwork across the board.</p>
       </div>
     </div>
 
-    <!-- Big Transparent News Tab -->
+    <!-- Detailed Clan War History -->
     <div class="news-tab">
-      <h2>More News</h2>
-      <button class="show-more-button" onclick="document.getElementById('singleNews').style.display='block'">Show More</button>
+      <h2>Past Clan Wars</h2>
+      <button class="show-more-button" onclick="document.getElementById('singleNews').style.display='block'">Show Details</button>
 
       <div class="single-news-page" id="singleNews">
-        <h2>Inside the External Esports Bootcamp</h2>
+        <h2>Match Recap: EXT vs ShadowUnit</h2>
         <p>
-          Dive into the daily grind of the External Esports team as they prepare for their most important matches yet. 
-          With a mix of coaching, strategy sessions, and reflex training, the bootcamp has shaped our team's discipline and synergy. 
-          Stay tuned for exclusive behind-the-scenes videos and interviews coming next week.
+          The match kicked off with EXT dominating the first two maps with superior rotations and aggressive setups.
+          ShadowUnit made a comeback attempt in Map 3, but ultimately fell short. Final score: EXT 3 - ShadowUnit 1.
+          <br><br>
+          Highlights:
+          <ul>
+            <li>Map 1 MVP: Vortex (KD: 15/3)</li>
+            <li>Map 2 Clutch: Razor 1v3 defuse</li>
+            <li>Map 4 Finish: EXT won with a triple kill entry push</li>
+          </ul>
         </p>
       </div>
     </div>
 
-    <!-- Footer at Bottom -->
+    <!-- Footer -->
     <section class="footer_section">
       <div class="social_box">
         <a href="#"><img src="facebook.png" alt=""></a>
