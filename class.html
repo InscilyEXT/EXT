@@ -1,23 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="External.png" />
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>External Esports - Clan Wars</title>
-
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
-  <link href="style1.css" rel="stylesheet" />
-  <link href="responsive.css" rel="stylesheet" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="External.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="style1.css" rel="stylesheet">
+  <link href="responsive.css" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .header_section .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 16px;
+      color: #333;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #5D01F3;
     }
 
     .floating-news {
@@ -25,73 +54,87 @@
       top: 70%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 999;
-      width: 100%;
-      pointer-events: none;
       display: flex;
-      justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
+      pointer-events: none;
     }
 
     .floating-news .news_card {
       background-color: rgba(255, 255, 255, 0.95);
       padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      max-width: 320px;
       text-align: left;
       pointer-events: auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .floating-news .news_card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
     .floating-news .news_card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
+      font-size: 1.6rem;
+      margin-bottom: 12px;
       color: #5D01F3;
+      font-weight: 600;
     }
 
     .floating-news .news_card p {
       font-size: 1rem;
       color: #555;
+      line-height: 1.5;
     }
 
     .news-tab {
-      margin-top: 500px;
-      padding: 80px 20px;
       text-align: center;
+      padding: 60px 20px;
+    }
+
+    .news-tab h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #333;
+      font-weight: 700;
     }
 
     .show-more-button {
-      margin: 40px auto 0;
-      display: inline-block;
+      margin-top: 30px;
       padding: 12px 30px;
-      font-size: 16px;
-      border: none;
       background-color: #5D01F3;
-      color: white;
+      color: #fff;
+      border: none;
       border-radius: 30px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .show-more-button:hover {
       background-color: #4501b3;
+      transform: scale(1.05);
     }
 
     .single-news-page {
       display: none;
       background-color: rgba(255, 255, 255, 0.95);
+      padding: 50px 30px;
       border-radius: 20px;
-      padding: 60px 30px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
       max-width: 1000px;
       margin: 40px auto 0;
       text-align: left;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
     }
 
     .single-news-page h2 {
+      font-size: 2.2rem;
       color: #5D01F3;
       margin-bottom: 20px;
+      font-weight: 700;
     }
 
     .single-news-page p {
@@ -104,6 +147,11 @@
       text-align: center;
       padding: 40px 0 20px 0;
       background-color: #f5f5f5;
+      color: #888;
+    }
+
+    .footer_section p {
+      font-size: 14px;
     }
 
     .social_box {
@@ -115,98 +163,96 @@
       display: inline-block;
     }
 
-    .footer_section p {
-      margin: 0;
-      font-size: 14px;
-      color: #888;
+    .social_box a img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .social_box a:hover img {
+      transform: scale(1.2);
     }
   </style>
 </head>
 
 <body>
-  <div class="hero_area">
-    <header class="header_section">
-      <div class="container">
-        <div class="header_nav">
-          <a class="navbar-brand brand_desktop" href="index.html">
-            <img src="logo.png" alt="External Esports Logo" />
-          </a>
-        </div>
-        <div class="bottom_nav">
-          <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand brand_mobile" href="index.html">
-              <img src="logo.png" alt="External Esports Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
-                  <li class="nav-item active"><a class="nav-link" href="wars.html">Clan Wars</a></li>
-                  <li class="nav-item"><a class="nav-link" href="blog.html">Sponsorship</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
 
-    <!-- Floating Clan War Results -->
-    <div class="floating-news">
-      <div class="news_card">
-        <h3>EXT vs Blaze • W 3-1</h3>
-        <p>Dominated early with coordinated pushes. MVP: Frosty with 12 eliminations in Game 2.</p>
+  <!-- Hero Area -->
+  <header>
+    <div class="container">
+      <div class="header_nav">
+        <a href="index.html" class="navbar-brand">
+          <img src="logo.png" alt="External Esports Logo">
+        </a>
       </div>
-      <div class="news_card">
-        <h3>EXT vs NightRaid • L 2-3</h3>
-        <p>A nail-biting series. Came down to the final round. GG to NightRaid!</p>
-      </div>
-      <div class="news_card">
-        <h3>EXT vs NovaCore • W 3-0</h3>
-        <p>Flawless execution and control. Zero rounds dropped. Solid teamwork across the board.</p>
-      </div>
-    </div>
-
-    <!-- Detailed Clan War History -->
-    <div class="news-tab">
-      <h2>Past Clan Wars</h2>
-      <button class="show-more-button" onclick="document.getElementById('singleNews').style.display='block'">Show Details</button>
-
-      <div class="single-news-page" id="singleNews">
-        <h2>Match Recap: EXT vs ShadowUnit</h2>
-        <p>
-          The match kicked off with EXT dominating the first two maps with superior rotations and aggressive setups.
-          ShadowUnit made a comeback attempt in Map 3, but ultimately fell short. Final score: EXT 3 - ShadowUnit 1.
-          <br><br>
-          Highlights:
-          <ul>
-            <li>Map 1 MVP: Vortex (KD: 15/3)</li>
-            <li>Map 2 Clutch: Razor 1v3 defuse</li>
-            <li>Map 4 Finish: EXT won with a triple kill entry push</li>
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item active"><a class="nav-link" href="wars.html">Clan Wars</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Sponsorship</a></li>
           </ul>
-        </p>
-      </div>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <!-- Footer -->
-    <section class="footer_section">
-      <div class="social_box">
-        <a href="#"><img src="facebook.png" alt=""></a>
-        <a href="#"><img src="twitter.png" alt=""></a>
-        <a href="#"><img src="linkedin.png" alt=""></a>
-        <a href="#"><img src="instagram.png" alt=""></a>
-        <a href="#"><img src="youtube.png" alt=""></a>
-      </div>
-      <p>&copy; 2025 All Rights Reserved. External Esports</p>
-    </section>
+  <!-- Floating Clan War Results -->
+  <div class="floating-news">
+    <div class="news_card">
+      <h3>EXT vs Blaze • W 3-1</h3>
+      <p>Dominated early with coordinated pushes. MVP: Frosty with 12 eliminations in Game 2.</p>
+    </div>
+    <div class="news_card">
+      <h3>EXT vs NightRaid • L 2-3</h3>
+      <p>A nail-biting series. Came down to the final round. GG to NightRaid!</p>
+    </div>
+    <div class="news_card">
+      <h3>EXT vs NovaCore • W 3-0</h3>
+      <p>Flawless execution and control. Zero rounds dropped. Solid teamwork across the board.</p>
+    </div>
+  </div>
 
-    <!-- Scripts -->
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Clan War History -->
+  <div class="news-tab">
+    <h2>Past Clan Wars</h2>
+    <button class="show-more-button" onclick="document.getElementById('singleNews').style.display='block'">Show Details</button>
+
+    <div class="single-news-page" id="singleNews">
+      <h2>Match Recap: EXT vs ShadowUnit</h2>
+      <p>
+        The match kicked off with EXT dominating the first two maps with superior rotations and aggressive setups.
+        ShadowUnit made a comeback attempt in Map 3, but ultimately fell short. Final score: EXT 3 - ShadowUnit 1.
+        <br><br>
+        Highlights:
+        <ul>
+          <li>Map 1 MVP: Vortex (KD: 15/3)</li>
+          <li>Map 2 Clutch: Razor 1v3 defuse</li>
+          <li>Map 4 Finish: EXT won with a triple kill entry push</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <section class="footer_section">
+    <div class="social_box">
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="youtube.png" alt="YouTube"></a>
+    </div>
+    <p>&copy; 2025 All Rights Reserved. External Esports</p>
+  </section>
+
+  <!-- Scripts -->
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 </html>
