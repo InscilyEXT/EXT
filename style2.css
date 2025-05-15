@@ -74,7 +74,7 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-image: url(hero-bg.jpg);
+  background-image: url(upscalemedia-transformed.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
