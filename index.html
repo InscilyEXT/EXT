@@ -99,18 +99,18 @@
     font-weight: bold;
   }
 
-  .overlay-title {
-  position: fixed;
+.overlay-title {
+  position: absolute; /* was fixed */
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 4rem;
   font-weight: 800;
-  color: #ffffff;
-  background: rgba(93, 1, 243, 0.9); /* optional background for visibility */
+  color: #000000; /* changed from white to black */
+  background: rgba(93, 1, 243, 0.9); /* still has a purple background */
   padding: 10px 20px;
-  z-index: 99999; /* ensures it's above everything */
-  pointer-events: none; /* allows clicks to pass through */
+  z-index: 99999;
+  pointer-events: none;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
