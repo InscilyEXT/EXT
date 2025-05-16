@@ -99,6 +99,21 @@ body {
   top: 55%;
 }
 
+.roster_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.roster_section .player {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  color: black;
+}
+
 .header_section {
   background-color: #ffffff;
   position: relative;
