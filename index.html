@@ -30,6 +30,9 @@
 </head>
 
 <body>
+
+  <div class="overlay-title">External Esports</div>
+
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -50,7 +53,6 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-	        <h1 style="font-size: 2.5em; text-align: center; margin-top: 20px;">External Esports</h1>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                     <ul class="navbar-nav  ">
@@ -97,6 +99,23 @@
     font-weight: bold;
   }
 
+  .overlay-title {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: rgba(93, 1, 243, 0.9); /* optional background for visibility */
+  padding: 10px 20px;
+  z-index: 99999; /* ensures it's above everything */
+  pointer-events: none; /* allows clicks to pass through */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+	
   .about-section p {
     font-size: 1.2rem;
     margin-bottom: 30px;
