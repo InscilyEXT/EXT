@@ -100,17 +100,19 @@
   }
 
 .overlay-title {
-  position: absolute; /* was fixed */
+  position: absolute;
   top: 20px;
   left: 75%;
   transform: translateX(-50%);
   font-size: 4rem;
   font-weight: 800;
-  color: #000000; /* changed from white to black */
+  color: #000000;
   padding: 10px 50px;
   z-index: 99999;
   pointer-events: none;
+  white-space: nowrap; /* Prevents text from wrapping */
 }
+
 
 	
   .about-section p {
