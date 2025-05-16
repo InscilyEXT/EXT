@@ -2,7 +2,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #040000;
-  background-color: #f30101;
+  background-color: #5d17eb;
 }
 
 .layout_padding {
@@ -87,8 +87,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#f30101));
-  background: linear-gradient(to bottom, transparent, transparent, #f30101);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#5d17eb));
+  background: linear-gradient(to bottom, transparent, transparent, #5d17eb);
 }
 
 .sub_page .hero_area {
@@ -294,7 +294,7 @@ a:focus {
 }
 
 .slider_section .slider_heading h2 span {
-  color: #f30101;
+  color: #5d17eb;
 }
 
 .slider_section .detail-box h1 {
@@ -391,7 +391,7 @@ a:focus {
   background-repeat: no-repeat;
   background-size: 8px;
   background-position: center;
-  background-color: #f30101;
+  background-color: #5d17eb;
   border-radius: 10%;
 }
 
@@ -435,7 +435,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #f30101;
+  color: #5d17eb;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -444,7 +444,7 @@ a:focus {
   border: none;
   width: 1px;
   height: 200px;
-  background-color: #f30101;
+  background-color: #5d17eb;
   margin: 2rem 0;
 }
 
