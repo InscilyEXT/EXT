@@ -30,22 +30,18 @@
       color: #fff;
     }
 
-    /* Always Visible New Arrivals Section Styling */
+    /* Scrollable New Arrivals Section Styling */
     .new-arrivals-section {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       background-color: rgba(0, 0, 0, 0.85);
       color: #fff;
-      padding: 20px;
-      z-index: 1000;
+      padding: 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       border-radius: 10px;
       width: 80%;
       max-width: 1000px;
+      margin: 50px auto; /* Center horizontally and add space around */
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
@@ -123,8 +119,8 @@
     </header>
   </div>
 
-  <!-- Always Visible New Arrivals Section -->
-  <div class="new-arrivals-section">
+  <!-- Scrollable New Arrivals Section -->
+  <section class="new-arrivals-section">
     <h2>NEW ARRIVALS</h2>
     <div class="product-grid">
       <div class="product-card">
@@ -145,7 +141,7 @@
       </div>
       <!-- Add more products here -->
     </div>
-  </div>
+  </section>
 
   <!-- info section -->
   <div class="info_section">
