@@ -24,134 +24,15 @@
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="style1.css" rel="stylesheet" />
+  <link href="style2.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="responsive.css" rel="stylesheet" />
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .floating-news {
-      position: absolute;
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 999;
-      width: 100%;
-      pointer-events: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .floating-news .news_card {
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      max-width: 300px;
-      text-align: left;
-      pointer-events: auto;
-    }
-
-    .floating-news .news_card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #D9241B;
-    }
-
-    .floating-news .news_card p {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    .news-tab {
-      margin-top: 500px;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .show-more-button {
-      margin: 40px auto 0;
-      display: inline-block;
-      padding: 12px 30px;
-      font-size: 16px;
-      border: none;
-      background-color: #D9241B;
-      color: white;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .show-more-button:hover {
-      background-color: #4501b3;
-    }
-
-    .single-news-page {
-      display: none;
-      background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 20px;
-      padding: 60px 30px;
-      max-width: 1000px;
-      margin: 40px auto 0;
-      text-align: left;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    }
-
-    .single-news-page h2 {
-      color: #5D01F3;
-      margin-bottom: 20px;
-    }
-
-    .single-news-page p {
-      font-size: 16px;
-      color: #333;
-      line-height: 1.7;
-    }
-
-    .footer_section {
-      text-align: center;
-      padding: 40px 0 20px 0;
-      background-color: #f5f5f5;
-    }
-
-    .social_box {
-      margin-bottom: 10px;
-    }
-
-    .social_box a {
-      margin: 0 10px;
-      display: inline-block;
-    }
-
-    .footer_section p {
-      margin: 0;
-      font-size: 14px;
-      color: #888;
-    }
-
-    /* Style for the title "Recent Team Wars" */
-    .recent-Team-wars-title {
-      position: absolute;
-      top: 40%; /* Move it further down */
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 3rem;
-      color: red; /* Change the color to red */
-      font-weight: 700;
-      z-index: 1000;
-      text-align: center;
-    }
-  </style>
 </head>
 
 <body>
+
+  <div class="overlay-title">External Esports</div>
+
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -179,7 +60,7 @@
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="about.html">Store</a>
+                        <a class="nav-link" href="store.html">Store</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="team-wars.html"> (Team Wars) </a>
@@ -198,64 +79,249 @@
           </div>
         </div>
       </div>
+
+  <!-- class section -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end class section -->
+	
+<style>
+    .sponsor-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      font-size: 4rem;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Scrollable New Arrivals Section Styling */
+    .new-arrivals-section {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 1000px;
+      margin: 50px auto; /* Center horizontally and add space around */
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .new-arrivals-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      color: #000;
+      padding: 10px;
+      width: 200px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .rating {
+      font-size: 1.2em;
+      color: gold;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+	
+  .about-section {
+    background-color: #5D01F3;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .about-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+.overlay-title {
+  position: absolute;
+  top: 47px;
+  left: 65%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  font-weight: 800;
+  color: #000000;
+  padding: 10px 50px;
+  z-index: 99999;
+  pointer-events: none;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.roster-card {
+  margin-bottom: 10px !important; /* or even 5px */
+}
+	
+  .about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .stat-box {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 16px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  .stat-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00ffcc;
+  }
+
+  .stat-box p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+
+  .pr-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #a020f0; /* purple */
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 7px;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.img-box {
+  position: relative;
+}
+
+.money-badge {
+  position: absolute;
+  top: 60px;
+  left: 8px;
+  background-color: #61fa8b; /* green */
+  color: yellow;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 7px;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.img-box {
+  position: relative;
+}
+	
+</style>
+	
     </header>
+    <!-- end header section -->
 
-    <!-- Recent Team Wars Title -->
-    <h1 class="recent-Team-wars-title">Recent Team Wars</h1>
 
-    <!-- Floating Team War Results -->
-    <div class="floating-news">
-      <div class="news_card">
-        <h3>EXT vs P2D • W 10-2</h3>
-        <p>GGs to Team P2D — we took the win in today’s friendly 2v2 boxfight match. The score was 10-2!!!</p>
-      </div>
-      <div class="news_card">
-        <h3>UPCOMING</h3>
-        <p>Contact us to fight us</p>
-      </div>
-      <div class="news_card">
-        <h3>UPCOMING</h3>
-        <p>Contact us to fight us</p>
+	
+  <!-- info section -->
+  <div class="info_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 ml-auto">
+          <div class="row info_main-row">
+            <div class="col-md-6 pr-0">
+
+              <!-- footer section -->
+              <section class=" footer_section ">
+                <div class="social_box">
+                  <a href="#">
+                    <img src="facebook.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="twitter.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="linkedin.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="instagram.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="youtube.png" alt="">
+                  </a>
+                </div>
+                <p>
+                  &copy; 2025 All Rights Reserved. External Esports
+                </p>
+              </section>
+              <!-- footer section -->
+
+            </div>
+            <div class="col-md-6  px-0">
+              <div class="img-box">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <!-- end info section -->
 
-    <!-- Detailed Team War History -->
-    <div class="news-tab">
-      <h2>Past Team Wars</h2>
-      <button class="show-more-button" onclick="document.getElementById('singleNews').style.display='block'">Show Details</button>
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
 
-      <div class="single-news-page" id="singleNews">
-        <h2>List of past Team wars</h2>
-          <br><br>
-          List:
-          <ul>
-            <li>10-2 Win over P2D - (EXT Samson + EXT Mazed) - 05/05/2025</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </p>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <section class="footer_section">
-      <div class="social_box">
-        <a href="#"><img src="facebook.png" alt=""></a>
-        <a href="#"><img src="twitter.png" alt=""></a>
-        <a href="#"><img src="linkedin.png" alt=""></a>
-        <a href="#"><img src="instagram.png" alt=""></a>
-        <a href="#"><img src="youtube.png" alt=""></a>
-      </div>
-      <p>&copy; 2025 All Rights Reserved. External Esports</p>
-    </section>
-
-    <!-- Scripts -->
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
+
 </html>
