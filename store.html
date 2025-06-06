@@ -7,9 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>External Esports</title>
 
+  <!-- Slider -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
   <link href="style2.css" rel="stylesheet" />
   <link href="responsive.css" rel="stylesheet" />
 </head>
@@ -61,7 +65,7 @@
     </header>
   </div>
 
-  <!-- Store Section -->
+  <!-- New Arrivals Section -->
   <section class="new-arrivals-section">
     <h2>OUR STORE</h2>
     <div class="product-grid">
@@ -74,4 +78,143 @@
         <button>Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="product1.jpg"
+        <img src="product1.jpg" alt="EXT Premium Tweaks" class="product-image">
+        <p class="category"></p>
+        <h3>EXT Premium Tweaks</h3>
+        <div class="rating">★★★★☆</div>
+        <p class="price">$4</p>
+        <a href="https://discord.com/channels/1356156337825906765/1356156340208275732" class="buy-button" target="_blank">Buy Here</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="info_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 ml-auto">
+          <div class="row info_main-row">
+            <div class="col-md-6 pr-0">
+              <section class="footer_section">
+                <div class="social_box">
+                  <a href="#"><img src="facebook.png" alt=""></a>
+                  <a href="#"><img src="twitter.png" alt=""></a>
+                  <a href="#"><img src="linkedin.png" alt=""></a>
+                  <a href="#"><img src="instagram.png" alt=""></a>
+                  <a href="#"><img src="youtube.png" alt=""></a>
+                </div>
+                <p>&copy; 2025 All Rights Reserved. External Esports</p>
+              </section>
+            </div>
+            <div class="col-md-6 px-0">
+              <div class="img-box">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    .overlay-title {
+      position: absolute;
+      top: 47px;
+      left: 65%;
+      transform: translateX(-50%);
+      font-size: 4rem;
+      font-weight: 800;
+      color: #000000;
+      padding: 10px 50px;
+      z-index: 99999;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .new-arrivals-section {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 1000px;
+      margin: 50px auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .new-arrivals-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      color: #000;
+      padding: 15px;
+      width: 200px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .product-image {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .rating {
+      font-size: 1.2em;
+      color: gold;
+    }
+
+    .price {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .buy-button {
+      display: inline-block;
+      background-color: #6610f2;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #4a0cc7;
+    }
+
+    .footer_section {
+      padding: 20px;
+    }
+
+    .social_box img {
+      width: 30px;
+      margin: 5px;
+    }
+  </style>
+</body>
+</html>
