@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mak</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .go-back {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      padding: 10px 15px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .image-container {
+      height: 100%;
+      width: 100%;
+    }
+
+    .image-container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="go-back" onclick="history.back()">← Go Back</button>
+
+  <div class="image-container">
+    <img src="Mak.jpg" alt="Full Page Image">
+  </div>
+
+</body>
+</html>
